@@ -2,7 +2,7 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
-
+console.log("URL", app.get('url'));
 app.start = function() {
   // start the web server
   return app.listen(function() {
