@@ -21,8 +21,8 @@
     "jshint": "^2.5.6"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/lukehoggett/blog-api"
   },
   "description": "blog"
 }
