@@ -1,15 +1,28 @@
 {
-  "name": "www",
-  "version": "0.0.1",
-  "description": "Simple node blogging API for hoggett.io",
-  "main": "server.js",
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "pretest": "jshint ."
   },
-  "author": "Luke Hoggett",
-  "license": "ISC",
   "dependencies": {
-    "node-static": "^0.7.7"
-  }
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "errorhandler": "^1.1.1",
+    "loopback": "^2.14.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-datasource-juggler": "^2.19.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "optionalDependencies": {
+    "loopback-explorer": "^1.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "blog"
 }
