@@ -1,9 +1,13 @@
-console.info(process.env.NODE_ENV);
+//console.info(process.env.NODE_ENV);
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 // console.info(loopback);
 var app = module.exports = loopback();
+
+app.use(loopback.favicon());
+// it is a simple call to the loopback logger
+app.use(loopback.logger('dev'));
 
 app.start = function() {
   // start the web server
